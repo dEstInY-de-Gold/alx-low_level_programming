@@ -6,19 +6,20 @@
  *main - declared is int with no initial argument
  */
 
-int main(void){
+int main(void)
+{
 	/*initialise lowercase characters*/
 	char ch;
 	/*initialise uppercase characters*/
 	char CH;
 
 	/*prints lowercase chars*/
-	for (ch='a'; ch<='z'; ch++){
+	for (ch = 'a'; ch <= 'z'; ch++)
 		putchar(ch);
-	}
+
 	/*prints uppercase chars*/
-	for (CH='A'; CH<='Z'; CH++){
+	for (CH = 'A'; CH< = 'Z'; CH++)
 		putchar(CH);
-	}
+	putchar("\n");
 	return (0);
 }

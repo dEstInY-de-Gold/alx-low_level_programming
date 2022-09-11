@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 
 /*
  *Prints numbers from 0 to 9
