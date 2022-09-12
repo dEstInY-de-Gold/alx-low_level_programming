@@ -11,12 +11,13 @@ int main(void)
 {
 	/*Declaration of int n*/
 	int n;
+	int last_digit;
 
 	srand(time(0));
 	/*Assigning a random value to n*/
 	n = rand() - RAND_MAX / 2;
 	/*Getting the last value of n*/
-	int last_digit = n % 10;
+	last_digit = n % 10;
 	/*Condition if last digit is 0*/
 	if (last_digit == 0)
 		printf("The last digit of %d is %d and is zero\n", n, last_digit);
