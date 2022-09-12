@@ -6,13 +6,14 @@
  *main - takes no argument and is initialised as int
  */
 
-int main(void){
+int main(void)
+{
 	/*initialise a variable called num*/
 	int num;
 	/*set, increment and output the value num*/
-	for (num=0; num<=9; num++){
-	
-		putchar("%d",num);
-	}
-	return (0)
+	for (num = 0; num <= 9; num++)
+		putchar(num);
+	/*a newline*/
+	putchar('\n');
+	return (0);
 }

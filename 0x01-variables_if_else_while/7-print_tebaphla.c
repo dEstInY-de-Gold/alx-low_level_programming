@@ -6,13 +6,13 @@
  * main - initialised to int with no arguments
  */
 
-int main(void){
+int main(void)
+{
 	/*defines the char variable*/
 	char ch;
 	/*initialise chars and start ouput reversively*/
-	for (ch='z'; ch>='a'; ch--){
-	
+	for (ch = 'z'; ch >= 'a'; ch--)
 		putchar(ch);
-	}
+	putchar('\n');
 	return (0);
 }
