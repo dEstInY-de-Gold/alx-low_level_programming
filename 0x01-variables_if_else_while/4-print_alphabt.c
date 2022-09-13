@@ -1,22 +1,21 @@
 #include <stdio.h>
 
 /*
- *prints all lowercase characters except q and e
+ *main - prints all lowercase characters except q and e
  *
- *main - int initialised and takes no argument
+ *int initialised and takes no argument
  */
 
-int main(void)
+int main (void)
 {
 
 	char ch;
-	for(ch = 'a'; ch <= 'z'; ch++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		if (!(ch == 'e' || ch == 'q'))
-		{
 			putchar(ch);
-		}
 	}
 	putchar('\n');
+	/*exit status for main*/
 	return (0);
 }

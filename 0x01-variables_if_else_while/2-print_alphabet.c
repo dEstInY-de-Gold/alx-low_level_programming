@@ -11,8 +11,9 @@ int main (void)
 	char ch;
 	/*iterate over chars and prints them*/
 	for (ch = 'a'; ch <= 'z'; ch++)
-		putchar (ch);
+		putchar(ch);
 	/*prints newline*/
-	putchar ('\n');
+	putchar('\n');
+	/*returns true if no error*/
 	return (0);
 }

@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /*
- *Prints numbers from 0 to 9
+ *main - Prints numbers from 0 to 9
  *
- *main - takes no argument and is initialised as int
+ *takes no argument and is initialised as int
  */
 
 int main(void)
@@ -15,5 +15,6 @@ int main(void)
 		putchar(num);
 	/*a newline*/
 	putchar('\n');
+	/*exit value for main*/
 	return (0);
 }

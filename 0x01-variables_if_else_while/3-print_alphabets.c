@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /*
- *Alphabet game - print all lowercase letters followed by all uppercase letters
+ *main - print all lowercase letters followed by all uppercase letters
  *
- *main - declared is int with no initial argument
+ *declared is int with no initial argument
  */
 
 int main(void)
@@ -20,5 +20,6 @@ int main(void)
 	for (CH = 'A'; CH <= 'Z'; CH++)
 		putchar(CH);
 	putchar('\n');
+	/*exit status*/
 	return (0);
 }
