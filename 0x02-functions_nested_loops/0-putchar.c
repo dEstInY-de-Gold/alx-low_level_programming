@@ -1,19 +1,16 @@
-#include <stdio.h>
+#include "main.h"
+#include "_putchar.c"
 
 /**
- *main - takes no argument with a return value in integer
+ *printchar - takes no argument with a return value in integer
  *
- *Return: prints out _putchar
+ *Return: nothing
  */
-void _putchar (char c)
-{
-	printf(c);
-	return ();
-}
 
-
-int main (void)
+int printchar(void)
 {
-	printf("_putchar\n");
+	/* ch = "_putchar"; */
+	_putchar("_putchar\n");
+	/* _putchar('\n'); */
 	return (0);
 }

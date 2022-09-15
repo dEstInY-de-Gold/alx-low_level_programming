@@ -1,13 +1,8 @@
-#include "_putchar.c"
+#ifndef MAIN_H
+#define MAIN_H
 
+int _putchar(int c);
+int printchar(void);
+int main(void);
 
-/**
- *main - the main file returned
- *
- *Return: Always 0
- */
-
-int main (void)
-{
-	_putchar(int)
-}
+#endif
