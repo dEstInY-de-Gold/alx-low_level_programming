@@ -6,6 +6,8 @@
  *main - int type with no argument
  *
  * Last digit of a given number if it is either zero, less than 6 and not 0 or greater than 5
+ *
+ *Return: always zero
  */
 int main(void)
 {
@@ -15,7 +17,7 @@ int main(void)
 
 	srand(time(0));
 	/*Assigning a random value to n*/
-	n = rand () - RAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
 	/*Getting the last value of n*/
 	last_digit = n % 10;
 	/*Condition if last digit is 0*/

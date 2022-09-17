@@ -4,9 +4,11 @@
  *main - prints lowercase characters
  *
  * prints lowercase chars
+ *
+ *Return: always zero
  */
 
-int main (void)
+int main(void)
 {
 	char ch;
 	/*iterate over chars and prints them*/
@@ -15,5 +17,5 @@ int main (void)
 	/*prints newline*/
 	putchar('\n');
 	/*returns true if no error*/
-	return (0);
+	return(0);
 }

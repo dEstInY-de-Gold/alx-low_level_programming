@@ -6,6 +6,8 @@
  *main - to print a random generated number
  *
  *is an int type that takes no argument
+ *
+ *Return: always zero
  */
 
 int main (void)
@@ -19,6 +21,6 @@ int main (void)
 	else if (n == 0)
 		printf("%d is zero\n", n);
 	else
-		printf ("%d is positive\n", n);
+		printf("%d is positive\n", n);
 	return (0);
-}	
+}

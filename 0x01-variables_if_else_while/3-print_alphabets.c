@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /*
- *main - print all lowercase letters followed by all uppercase letters
+ * main - print all lowercase letters followed by all uppercase letters
  *
- *declared is int with no initial argument
+ * declared is int with no initial argument
+ *
+ * Return: zero as usual
  */
 
 int main(void)

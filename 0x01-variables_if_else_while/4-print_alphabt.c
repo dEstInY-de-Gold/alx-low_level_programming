@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /*
- *main - prints all lowercase characters except q and e
+ * main - prints all lowercase characters except q and e
  *
  *int initialised and takes no argument
+ *
+ * Rerurn: zero again 
  */
 
 int main (void)
@@ -12,6 +14,7 @@ int main (void)
 	char ch;
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
+		/*searches and skips chars 'e' and 'q'*/
 		if (!(ch == 'e' || ch == 'q'))
 			putchar(ch);
 	}
