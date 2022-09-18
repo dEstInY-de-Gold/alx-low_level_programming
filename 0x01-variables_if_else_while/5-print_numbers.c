@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Count from zero to ten
  *
  * Return: always zero

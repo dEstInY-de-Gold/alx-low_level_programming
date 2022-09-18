@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  *outputs lowercase chars in reverse form
  *
  * main - initialised to int with no arguments

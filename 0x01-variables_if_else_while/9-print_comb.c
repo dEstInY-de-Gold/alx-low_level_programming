@@ -1,14 +1,15 @@
 #include <stdio.h>
 
-/*
- *combo - prints all possible combinations of single digits
- *main - integer type and void
+/**
+ * main - prints all possible combinations of single digits
+ *
+ * Return: zero
  */
 
 int main(void)
 {
 	int num;
-	
+
 	for (num = 0; num <= 9; num++)
 	{
 		putchar(num);
@@ -16,5 +17,6 @@ int main(void)
 		putchar(' ');
 	}
 	putchar('\n');
-	return(0);
+
+	return (0);
 }

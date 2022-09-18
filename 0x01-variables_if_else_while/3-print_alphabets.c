@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - print all lowercase letters followed by all uppercase letters
  *
  * Return: zero as usual
@@ -12,6 +12,7 @@ int main(void)
 	char ch;
 	/*initialise uppercase characters*/
 	char CH;
+
 	/*prints lowercase chars*/
 	for (ch = 'a'; ch <= 'z'; ch++)
 		putchar(ch);
