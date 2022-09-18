@@ -17,5 +17,5 @@ int main(void)
 	/*prints newline*/
 	putchar('\n');
 	/*returns true if no error*/
-	return(0);
+	return (0);
 }

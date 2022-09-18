@@ -3,14 +3,14 @@
 #include <stdlib.h>
 
 /**
- *main - to print a random generated number
+ * main - to print a random generated number
  *
  *is an int type that takes no argument
  *
- *Return: always zero
+ * Return: always zero
  */
 
-int main (void)
+int main(void)
 {
 	int n;
 

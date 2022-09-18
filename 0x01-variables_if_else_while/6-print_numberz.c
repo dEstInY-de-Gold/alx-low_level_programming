@@ -1,18 +1,19 @@
 #include <stdio.h>
 
 /*
- *main - Prints numbers from 0 to 9
+ * main - Prints numbers from 0 to 9
  *
- *takes no argument and is initialised as int
+ * Return: zero
  */
 
 int main(void)
 {
 	/*initialise a variable called num*/
-	int num;
+	int n;
+
 	/*set, increment and output the value num*/
-	for (num = 0; num <= 9; num++)
-		putchar(num);
+	for (n = 0; n <= 9; n++)
+		putchar(n);
 	/*a newline*/
 	putchar('\n');
 	/*exit value for main*/

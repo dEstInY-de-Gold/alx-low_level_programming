@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /*
- *main - Count from zero to ten
+ * main - Count from zero to ten
  *
- *takes no initial argument
+ * Return: always zero
  */
 
 int main(void)
 {
-
 	int num;
+
 	for (num = 0; num <= 9; num++)
 		printf("%d", num);
 	printf("\n");

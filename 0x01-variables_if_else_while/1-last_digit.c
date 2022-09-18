@@ -3,9 +3,7 @@
 #include <stdio.h>
 
 /**
- *main - int type with no argument
- *
- * Last digit of a given number if it is either zero, less than 6 and not 0 or greater than 5
+ *main - prints last digit of a random number to stdout
  *
  *Return: always zero
  */
@@ -25,7 +23,10 @@ int main(void)
 		printf("Last digit of %d is %d and is 0\n", n, last_digit);
 	/*Condition if last digit id less than 6 and greater than zero*/
 	else if (last_digit <= 5)
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last_digit);
+	{
+		printf("Last digit of %d is %d", n, last_digit);
+		printf(" and is less than 6 and not 0\n");
+	}
 	/*Condition if last digit is greater than 5*/
 	else
 		printf("Last digit of %d is %d and is greater than 5\n", n, last_digit);

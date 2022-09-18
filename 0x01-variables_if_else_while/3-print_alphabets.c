@@ -3,8 +3,6 @@
 /*
  * main - print all lowercase letters followed by all uppercase letters
  *
- * declared is int with no initial argument
- *
  * Return: zero as usual
  */
 
