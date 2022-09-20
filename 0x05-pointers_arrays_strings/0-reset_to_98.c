@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - resets input value to 98
- * @&i: the memory location of the input argument to this function
+ * @p: the memory location of the input argument to this function
  *
  * Return: the reset value
  */
