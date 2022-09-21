@@ -1,24 +1,21 @@
 #include <stdio.h>
 
 /*
- *prints numbers of base16 in lowercase
+ * main - prints numbers in base16
  *
- * main - integer typed initialised to value null
+ * Return: zero again
  */
 
-int main(void){
-
-	int num;
+int main(void)
+{
+ 	int num;
 	char ch;
 
-	for (num=0; num<=9; num++){
-	
-		putchar("%d", num);
-	}
-	for (ch='a'; ch<='f'; ch++){
-	
+	for (num = 0; num <= 9; num++)
+		putchar(num + '0');
+	for (ch = 'a'; ch <= 'f'; ch++)
 		putchar(ch);
-	}
-	putchar("\n");
+	putchar('\n');
+
 	return (0);
 }

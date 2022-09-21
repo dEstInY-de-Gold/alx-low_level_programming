@@ -3,7 +3,7 @@
 /**
  * main - prints all lowercase characters except q and e
  *
- * Rerurn: zero again 
+ * Return: zero again
  */
 
 int main(void)

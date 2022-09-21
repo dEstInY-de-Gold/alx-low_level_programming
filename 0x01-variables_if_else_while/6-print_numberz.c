@@ -13,7 +13,7 @@ int main(void)
 
 	/*set, increment and output the value num*/
 	for (n = 0; n <= 9; n++)
-		putchar(n);
+		putchar('0' + n);
 	/*a newline*/
 	putchar('\n');
 	/*exit value for main*/
