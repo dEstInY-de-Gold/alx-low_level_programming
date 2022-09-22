@@ -18,8 +18,4 @@ void _puts(char *str)
 		i++;
 	}
 	_putchar(10);
-
-/*
-	write(1, str, 1i
-*/
 }

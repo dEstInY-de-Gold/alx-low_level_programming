@@ -2,7 +2,7 @@
 
 /**
  * rev_string - reverse the input string argument
- * 
+ *
  * @s: input argument
  */
 
@@ -19,8 +19,8 @@ void rev_string(char *s)
 	while (s[len] != '\0')
 		len++;
 
-	a = len-1;
-	len = len/2;
+	a = len - 1;
+	len = len / 2;
 	while (len--)
 	{
 		tmp = s[b];
