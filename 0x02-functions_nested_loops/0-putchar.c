@@ -1,16 +1,23 @@
 #include "main.h"
-#include "_putchar.c"
+
 /**
- *printchar - takes no argument with a return value in integer
+ * main - takes no argument with a return value in integer
  *
- *Return: nothing
+ * Return: nothing
  */
 
-int printChar(void)
+int main(void)
 {
-	char* ch = "_putchar";
+	int i;
+	char *ch;
 
-	_putchar(ch);
-	_putchar("\n");
+	ch = "_putchar";
+	i = 0;
+	while (ch[i] != '\0')
+	{
+		_putchar(ch[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
