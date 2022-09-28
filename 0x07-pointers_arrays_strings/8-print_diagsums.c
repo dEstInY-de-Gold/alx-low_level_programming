@@ -2,7 +2,8 @@
 #include <stdio.h>
 /**
  * print_diagsums - prints sum diagonals in 2x2 array to stdout
- * @a: given 2d array
+ *
+ *@a: given 2d array
  * @size: size of array
  */
 
