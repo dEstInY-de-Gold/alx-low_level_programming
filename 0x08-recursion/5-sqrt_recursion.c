@@ -1,18 +1,34 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - calculates squareroot of a number
- * @n: number to compute sqrt on
+ * _number - prints power of a number to stdout
+ * @k: number
+ * @x: squareroot
  *
- * Return: sqrt of n
+ * Return: x
  */
 
+int _number(int k, int x)
+{
+	if ((x * x) == k)
+	{
+		return (x);
+	}
+	else if ((x * x) > k)
+	{
+		return (-1);
+	}
+	return (_number(k, x + 1));
+}
 
+/**
+ * _sqrt_recursion - calculates squareroot of a number.
+ * @n: number to return sqrt on.
+ *
+ * Return: sqrt of n.
+ */
 
 int _sqrt_recursion(int n)
 {
-	int rtn;
-
-	rtn = (n**(1/2));
-	if (rtn)
+	return (_number(n, 1));
 }
