@@ -1,0 +1,23 @@
+#include "main.h"
+
+/**
+ * print_triangle - prints a triangle to stdout
+ *
+ * @size: Height and length of the triangle
+ */
+
+void print_triangle(int siz)
+{
+	int n, h;
+
+	if (size < 1)
+		_putchar('\n');
+	else
+		for (n = size - 1; n > 0; n--)
+		{
+			_putchar (' ');
+			for (h = 0; h < size; h++)
+				_putchar('#');
+			_putchar('\n');
+		}
+}

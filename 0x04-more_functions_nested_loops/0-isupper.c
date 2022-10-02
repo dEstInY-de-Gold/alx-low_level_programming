@@ -1,21 +1,13 @@
-#include <wctype.h>
+#include "main.h"
 
 /**
- * _isupper - detects upper case characters
- *@c: input argument to function
+ * _isupper - checks for uppercase character
+ * @c: the character to be checked
  *
- *Return: 1 if an upper case letter and 0 if not
+ * Return: 1 if c is uppercase, 0 otherwise
  */
-int iswctype(wint_t, wctype_t);
 
 int _isupper(int c)
 {
-	int ch;
-	int ret;
-	char let;
-
-	ch [26] = (let = 'A', let <= 'Z', let++);
-	ret = iswctype(wint_t c, wctype_t ch);
-
-	return (ret);
+	return (c >= 'A' && c <= 'Z');
 }
