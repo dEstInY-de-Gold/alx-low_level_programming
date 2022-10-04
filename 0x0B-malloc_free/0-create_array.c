@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * create_array create a pointer to an allocated memory
+ * create_array - creates a pointer to an allocated memory
  *
  * @size: parameter with the size of the array
  * @c: element of the array
@@ -20,15 +20,11 @@ char *create_array(unsigned int size, char c)
 		return (0);
 	else if (a == NULL)
 		return (0);
-	else
-	{
-		while (i < size)
-		{
-			a[i] = c;
-			i++;
-		}
-		return (a);
-	}
 
-	return (0);
+	while (i < size)
+	{
+		a[i] = c;
+		i++;
+	}
+	return (a);
 }

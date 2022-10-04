@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * strdup - a pointer newly allocated space in memory
+ * _strdup - a pointer newly allocated space in memory
  *
  * @str: Parameter with the read_only_string
  *
@@ -26,14 +26,10 @@ char *_strdup(char *str)
 	a = malloc(sizeof(char) * (n + 1));
 	if (a == NULL)
 		return (0);
-	else
+	while (i <= n)
 	{
-		while (i <= n)
-		{
-			a[i] = str[i];
-			i++;
-		}
-		return (a);
+		a[i] = str[i];
+		i++;
 	}
-	return (0);
+		return (a);
 }
