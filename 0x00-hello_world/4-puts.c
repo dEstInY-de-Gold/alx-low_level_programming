@@ -3,6 +3,7 @@
 
 /*
  * main - to display a string on the screen
+ * it is the name of the function.
  *
  * Return: returns zero
  */
