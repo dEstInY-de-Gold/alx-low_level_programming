@@ -4,7 +4,7 @@
 /**
  * free_grid - returns memory space previously used by alloc_grid file to sys
  * @grid: grid input file
- * @height:
+ * @height: number of rows of the grid.
  */
 
 void free_grid(int **grid, int height)
