@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
+/**
  * main - to display a specified text to the output screen
  *
  * Return: returns 0

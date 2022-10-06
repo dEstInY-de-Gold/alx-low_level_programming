@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
- * main - to display a string on the screen
- * it is the name of the function.
+/**
+ * main - to display a string on the stdout
  *
  * Return: returns zero
  */
