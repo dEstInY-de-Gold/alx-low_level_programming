@@ -4,16 +4,24 @@
 /**
  * main - this returns the amount of bytes to store a data type variable in c
  *
- * Return: one.
+ * Return: zero.
  */
 
 int main(void)
 {
-	printf("Size of a char: %ld byte(s)\n", (unsigned long)sizeof(char));
-	printf("Size of an int: %ld byte(S)\n", (unsigned long)sizeof(int));
-	printf("size of a long int: %ld byte(s)\n", (unsigned long)sizeof(long int));
-	printf("size of a long long int: %ld byte(s)\n", (unsigned long)sizeof(long long int));
-	printf("size of a float: %ld byte(s)\n", (unsigned long)sizeof(float));
+	char c;
+	int i;
+	long int li;
+	long long int lli;
+	float f;
+	char *str;
+
+	str = "size of long long int";
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of an int: %lu byte(S)\n", (unsigned long)sizeof(i));
+	printf("size of a long int: %lu byte(s)\n", (unsigned long)sizeof(li));
+	printf("%s: %lu byte(s)\n", str, (unsigned long)sizeof(lli));
+	printf("size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
 
 	return (0);
 }
