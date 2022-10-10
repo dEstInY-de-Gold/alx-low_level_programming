@@ -1,0 +1,13 @@
+# excludes copied file
+02-main.c
+# ecludes exetion files
+c
+cc
+a
+b
+d
+e
+# main files for testing
+4-main.c
+# The _putchar file
+_putchar.c
