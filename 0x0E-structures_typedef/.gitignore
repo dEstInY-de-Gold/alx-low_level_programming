@@ -1,0 +1,10 @@
+# exclude all main.c files
+*main.c
+
+# exclude executable files
+a
+b
+c
+d
+e
+f
