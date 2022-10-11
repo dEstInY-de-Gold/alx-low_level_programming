@@ -1,6 +1,9 @@
 # exclude all main.c files
 *main.c
 
+#Excludes main.h
+main.h
+
 # exclude executable files
 a
 b
