@@ -28,11 +28,14 @@ int _strlen(char *s)
 
 char *_strcpy(char *dest, char *src)
 {
-	int x, lensrc;
+	int x = 0, lensrc;
 
-	lensrc = _strlen(src) + 1;
-	for (x = 0; x < lensrc; x++)
+	lensrc = _strlen(src);
+	while (x < lensrc)
+	{
 		dest[x] = src[x];
+		x++;
+	}
 	dest[x] = '\0';
 
 	return (dest);
