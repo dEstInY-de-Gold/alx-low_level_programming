@@ -30,7 +30,7 @@ char *_strcpy(char *dest, char *src)
 {
 	int x, lensrc;
 
-	lensrc = _strlen(src);
+	lensrc = _strlen(src) + 1;
 	for (x = 0; x < lensrc; x++)
 		dest[x] = src[x];
 	dest[x] = '\0';
