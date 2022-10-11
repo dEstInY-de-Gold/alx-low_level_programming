@@ -2,15 +2,14 @@
 #define HEADER_FILE
 
 /**
- * dog - creates a data structure for dog
+ * struct dog - creates data structure for dog
  * @name: name of dog
  * @age: age of dog
  * @owner: owner of dog
  *
- * Description: A composite data type structure
- * for the records of dog details.
+ * Description: This is a composite data definition
+ * for dog details.
  */
-
 struct dog
 {
 	char *name;
