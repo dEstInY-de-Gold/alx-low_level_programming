@@ -1,5 +1,5 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef STRUCT_H
+#define STRUCT_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,6 +15,11 @@ typedef struct op
 	char *op;
 	int (*f)(int a, int b);
 } op_t;
+
+#endif
+
+#ifndef FUNCTION_H
+#define FUNCTION_H
 
 int (*get_op_func(char *s))(int, int);
 
