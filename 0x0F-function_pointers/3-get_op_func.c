@@ -8,7 +8,7 @@
  * Return: a pointer to the chosen function for operation
  */
 
-int (*get_op_func( char *s))(int, int)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
