@@ -7,7 +7,7 @@
  */
 
 void print_strings(const char *seperator, const unsigned int n, ...)
-{	
+{
 	va_list list;
 	unsigned int i = 0;
 
@@ -20,7 +20,7 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 			printf("%s", seperator);
 		if (va_arg(list, char *) == NULL)
 		{
-			printf("nil");
+			printf("(nil)");
 			if (i == n - 1)
 				printf("\n");
 		}

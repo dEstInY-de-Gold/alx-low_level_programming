@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-#include <stdio.h>
+
 
 /**
  * print_numbers - prints input numbers to stdout
@@ -21,7 +21,7 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 			printf("%s", seperator);
 		printf("%d", va_arg(num, int));
 		if (i == n - 1)
-			printf("\n");
+			putchar('\n');
 	}
 	va_end(num);
 }
