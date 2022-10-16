@@ -23,6 +23,5 @@ int *array_range(int min, int max)
 		*(ptr + n) = i;
 		n++;
 	}
-	*(ptr + n) = 0;
 	return (ptr);
 }
