@@ -7,12 +7,22 @@
 #include <string.h>
 
 /*********STRUCTURES*********/
+
+/**
+ * struct list_s - singly linked list
+ * @str: string (malloc'ed)
+ * @len: length of string
+ * @next: pointer to next node
+ *
+ * Description - defined data structure for singly linked list
+ */
+
 typedef struct list_s
 {
 	char *str;
 	unsigned int len;
 	struct list_s *next;
-}list_t;
+} list_t;
 
 /*********FUNCTIONS PROTOTYPES********/
 int _putchar(char c);
