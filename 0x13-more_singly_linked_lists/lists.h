@@ -6,10 +6,11 @@
 #include <strings.h>
 
 /**
+ * struct listint_s - user define data structure
  * @next: points to the next node
+ * @n: integer data type
  *
  * Description: singly linked list node structure
- * 
  */
 
 typedef struct listint_s
