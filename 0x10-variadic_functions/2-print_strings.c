@@ -9,14 +9,15 @@
 void print_strings(const char *seperator, const unsigned int n, ...)
 {
 	va_list list;
-	unsigned int i = 0;
+	unsigned int i;
 
 	seperator = (seperator == NULL) ? seperator : "";
 
 	va_start(list, n);
+	i = 0;
 	while (i < n)
 	{
-		if (i > 0)
+		if (i > 0 && (i < (n - 1)))
 			printf("%s", seperator);
 		if (va_arg(list, char *) == NULL)
 		{
