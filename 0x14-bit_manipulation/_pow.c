@@ -10,16 +10,11 @@
 
 int _pow(int x, int y)
 {
-	int prod, cons;
+	int prod = 1;
 
-	prod = 0;
-	cons = y
 	while (y > 0)
 	{
-		if (y == cons)
-			prod = x*x;
-		else
-			prod += prod*x;
+		prod *= x;
 		y--;
 	}
 	return (prod);
