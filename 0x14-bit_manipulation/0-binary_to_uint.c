@@ -1,13 +1,13 @@
 #include "main.h"
 
+int _pow(int x, int y);
+
 /**
  * binary_to_uint - converts binary to decimal
  * @b: input string of binary number
  *
  * Return: number in base ten.
  */
-
-int _pow(int x, int y);
 
 unsigned int binary_to_uint(const char *b)
 {
@@ -33,7 +33,7 @@ unsigned int binary_to_uint(const char *b)
 			n = 0;
 		if (b[i3] == 49)
 			n = 1;
-		dec += n*_pow(2, i);
+		dec += n * _pow(2, i);
 		i--;
 		i3++;
 	}
