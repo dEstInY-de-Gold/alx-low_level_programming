@@ -9,15 +9,15 @@
 
 size_t list_len(const list_t *h)
 {
-	size_t nodes = 0;
-	struct list_s* tmp = h->next;
+	size_t nodes;
+	const list_t *tmp;
 
-	while (tmp != NULL)
+	nodes = 0;
+	tmp = h;
+	while (tmp)
 	{
 		nodes++;
 		tmp = tmp->next;
-		if (tmp->next == NULL)
-			nodes++;
 	}
 	return (nodes);
 }
