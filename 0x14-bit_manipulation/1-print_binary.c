@@ -14,6 +14,7 @@ void print_binary(unsigned int n)
 		printf("%d", 0);
 	}
 	else
+	{
 		while (lp > 0)
 		{
 			if ((lp & n) == 0)
@@ -25,4 +26,5 @@ void print_binary(unsigned int n)
 				printf("%d", 1);
 			lp = lp >> 1;
 		}
+	}
 }
