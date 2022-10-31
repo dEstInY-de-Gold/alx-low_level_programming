@@ -1,5 +1,5 @@
-/* #include "main.h" */
-#include <stdio.h>
+#include "main.h"
+
 /**
  * _pow - calculates power of an int
  * @x: number
@@ -10,27 +10,12 @@
 
 int _pow(int x, int y)
 {
-	int prod, cons;
+	int prod = 1;
 
-	cons = y;
 	while (y > 0)
 	{
-		if (y == cons)
-		{
-			prod = x*x;
-			y--;
-		}
-		else
-			prod *= x;
+		prod *= x;
 		y--;
 	}
 	return (prod);
-}
-
-int main(void)
-{
-	int n;
-	n = _pow(2, 7);
-	printf("%d\n", n);
-	return (0);
 }

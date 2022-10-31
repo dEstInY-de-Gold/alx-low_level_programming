@@ -1,5 +1,7 @@
 #include "main.h"
 
+int _pow(int x, int y);
+
 /**
  * binary_to_uint - converts binary to decimal
  * @b: input string of binary number
@@ -9,31 +11,51 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int dec;
-	int i, i2, i3, n;
+	unsigned int dec = 0;
+	int i, i2 = 0, i3, n;
 
 	i = 0;
-	if (!(b))
+	if (b == NULL)
 		return (0);
-	while (b)
+	while (b[i2] != '\0')
 	{
-		i++;
-		b++;
-	}
-	for (i2 = 0; i2 > i; i2++)
-	{
-		if (!(atoi(b)))
+		if (b[i2] == '0' || b[i2] == '1')
+			i++;
+		else
 			return (0);
-		b++;
+		i2++;
 	}
 	i3 = 0;
-	while (i > 0)
+	i--;
+	while (i >= 0)
 	{
-		n = atoi(b);
-		dec += n*_pow(2, (i-1));
+		if (b[i3] == 48)
+			n = 0;
+		if (b[i3] == 49)
+			n = 1;
+		dec += n * _pow(2, i);
 		i--;
-		b++;
 		i3++;
 	}
 	return (dec);
+}
+
+/**
+ * _pow - calculates power of an int
+ * @x: number
+ * @y: exponential
+ *
+ * Return: power of x.
+ */
+
+int _pow(int x, int y)
+{
+	int prod = 1;
+
+	while (y > 0)
+	{
+		prod *= x;
+		y--;
+	}
+	return (prod);
 }
