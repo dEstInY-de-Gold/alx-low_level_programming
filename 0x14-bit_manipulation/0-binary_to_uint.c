@@ -22,15 +22,17 @@ unsigned int binary_to_uint(const char *b)
 	}
 	for (i2 = 0; i2 > i; i2++)
 	{
-		if (!(sscanf(b[i2], "%d", &x)))
+		if (!(atoi(b)))
 			return (0);
+		b++;
 	}
 	i3 = 0;
 	while (i > 0)
 	{
-		n = int(b[i3]);
+		n = atoi(b);
 		dec += n*_pow(2, (i-1));
 		i--;
+		b++;
 		i3++;
 	}
 	return (dec);
