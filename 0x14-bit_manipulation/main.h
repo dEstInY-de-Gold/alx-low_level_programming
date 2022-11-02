@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "_pow.c"
 
 int _putchar(char c);
 int _pow(int x, int y);
