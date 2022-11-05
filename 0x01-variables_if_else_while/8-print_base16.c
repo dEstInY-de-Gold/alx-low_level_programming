@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - prints numbers in base16
  *
  * Return: zero again
@@ -8,7 +8,7 @@
 
 int main(void)
 {
- 	int num;
+	int num;
 	char ch;
 
 	for (num = 0; num <= 9; num++)
