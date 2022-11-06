@@ -10,7 +10,7 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int lp = 4294967296;
+	unsigned long int lp = 2147483647;
 	unsigned int x = 0, st;
 	int num;
 
@@ -22,7 +22,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 	while (lp > 0)
 	{
-		if ((lp & n) == 0)
+		if ((lp & n) != 0)
 		{
 			if (lp < n)
 			{
