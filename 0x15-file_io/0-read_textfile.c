@@ -12,14 +12,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
 	int fd;
-	ssize_t count, fd_r;
+	ssize_t count, fd_r, rdata;
 
-	if (filename == NULL)
+	if ((filename == NULL) || (letters == 0))
 		return (0);
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	buffer = malloc(sizeof(char) * (letters + 1));
+	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
 		return (0);
 	fd_r = read(fd, buffer, letters);
@@ -29,17 +29,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-	count = write(STDOUT_FILENO, buffer, fd_r);
+	if (((unsigned long int) fd_r < letters) && ((int) fd_r != -1))
+		rdata = fd_r;
+	else if ((unsigned long int) fd_r == letters)
+		rdata = letters;
+	count = write(STDOUT_FILENO, buffer, rdata);
 	if (count == -1)
 	{
 		free(buffer);
-		close(fd_r);
 		close(fd);
 		return (0);
 	}
 	free(buffer);
-	close(count);
-	close(fd_r);
 	close(fd);
 
 	return (count);
