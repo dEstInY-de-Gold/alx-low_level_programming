@@ -20,27 +20,30 @@ size_t _strlen(char *str)
 }
 
 /**
- * create_file - create a new file.
- * @filename: name of file to be created.
- * @text_content: content to write into file.
+ * append_text_to_file - as named
+ * @filename: name of file
+ * @text_content: content to append
  *
- * Return: 1 on success or -1 on failure.
+ * Return: 1 on succes, or -1 on failure.
  */
 
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd, len = 0;
-	ssize_t crt;
+	int fd;
+	size_t len = 0;
+	ssize_t wrt;
 
 	if (filename == NULL)
 		return (-1);
-	fd = open(filename, O_CREAT | O_TRUNC | O_RDWR, 0600);
+	fd = open(filename, O_APPEND | O_RDWR);
 	if (fd == -1)
 		return (-1);
 	if (text_content != NULL)
+	{
 		len = _strlen(text_content);
-	crt = write(fd, text_content, len);
-	if (crt == -1)
+		wrt = write(fd, text_content, len);
+	}
+	if (wrt == -1)
 	{
 		close(fd);
 		return (-1);
