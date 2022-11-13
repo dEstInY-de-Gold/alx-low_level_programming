@@ -29,10 +29,7 @@ int main(void)
 					continue;
 				}
 				else
-				{
-					cnt = i % 100;
-					i += cnt / 10 + 1;
-				}
+					i += ((i % 100) / 10) + 1;
 			}
 		}
 		if (i <= 789)
@@ -49,6 +46,5 @@ int main(void)
 		i++;
 	}
 	putchar('\n');
-
 	return (0);
 }

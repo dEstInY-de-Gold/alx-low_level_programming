@@ -26,11 +26,8 @@ int main(void)
 				putchar(' ');
 			}
 		}
-		if (i > 90)
-		{
-				putchar('\n');
-		}
 		i++;
 	}
+	putchar('\n');
 	return (0);
 }
