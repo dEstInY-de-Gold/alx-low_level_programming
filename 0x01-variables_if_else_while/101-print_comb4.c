@@ -8,33 +8,47 @@
 
 int main(void)
 {
-	int i = 10, n1, n2, ctr;
+	int i = 10, cnt;
 
 	while (i < 1000)
 	{
-		if ((i < 100) && (i % 10) == 0)
-			i += (i / 10 + 1);
-		if ((i >= 100) && (i % 10) == 0)
+		if (i < 100 && i % 10 == 0)
+			i += i / 10 + 1;
+		if ((i > 99) && (i % 10 == 0))
 		{
-			ctr = i / 10;
-			i += (ctr / 10 + 12);
+			if ((i % 100) == 0)
+			{
+				cnt = (i / 100 + 2) + (i / 10);
+				i += cnt + 10;
+			}
+			else
+			{
+				if (i % 100 == 90)
+				{
+					i += 10;
+					continue;
+				}
+				else
+				{
+					cnt = i % 100;
+					i += cnt / 10 + 1;
+				}
+			}
 		}
-		if (i < 900)
+		if (i <= 789)
 		{
 			putchar(i / 100 + '0');
-			n1 = i % 100;
-			putchar(n1 / 10 + '0');
-			n2 = n1 % 10;
-			putchar(n2 % 10 + '0');
-			if (i < 800)
+			putchar(((i % 100) / 10) + '0');
+			putchar(((i % 100) % 10) + '0');
+			if (i != 789)
 			{
 				putchar(',');
 				putchar(' ');
 			}
 		}
-		if (i > 800)
-			putchar('\n');
 		i++;
 	}
+	putchar('\n');
+
 	return (0);
 }
