@@ -21,7 +21,7 @@ int main(void)
 		else if (i <= 49)
 			printf("%li, ", fib2);
 		else
-			printf("%li", fib2);
+			printf("%li\n", fib2);
 		tmp = fib2;
 		fib2 += fib1;
 		fib1 = tmp;
