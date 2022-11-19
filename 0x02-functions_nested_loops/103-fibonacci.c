@@ -14,6 +14,7 @@ int main(void)
 	{
 		if (fib2 % 2 == 0)
 			sum += fib2;
+		i = fib2;
 		tmp = fib2;
 		fib2 += fib1;
 		fib1 = tmp;

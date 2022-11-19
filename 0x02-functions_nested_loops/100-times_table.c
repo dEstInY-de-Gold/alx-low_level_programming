@@ -8,27 +8,32 @@
 
 void print_times_table(int n)
 {
-	int x, y, t;
+	int x, y, t, chk;
 
-	if ((n >= 0) || (n <= 15))
+	if ((n >= 0) && (n <= 15))
 	{
 		for (x = 0; x <= n; x++)
 		{
 			for (y = 0; y <= n; y++)
 			{
 				t = x * y;
-				if (t < 10)
-					printf("%d,   ", t);
-				else if (t < 100)
-					printf("%d,  ", t);
-				else if (t < 1000)
-					printf("%d, ", t);
-				else if (t >= 1000)
-					printf("%d", t);
+				chk = (y + 1) * x;
+				if (y < n)
+				{
+					printf("%i,", t);
+					if (chk >= 100)
+						printf(" ");
+					else if (chk >= 10)
+						printf("  ");
+					else
+						printf("   ");
+				}
 				else
-					printf("%d", t);
+					printf("%i\n", t);
+
 			}
-			_putchar('\n');
 		}
 	}
+	else
+		printf("\n");
 }
