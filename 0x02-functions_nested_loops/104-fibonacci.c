@@ -8,16 +8,16 @@
 
 int main(void)
 {
-	long unsigned int fib1 = 1, fib2 = 2, i = 0, tmp;
+	unsigned long int fib1 = 1, fib2 = 2, i = 0, tmp;
 
-	while (i <= 98)
+	while (i < 98)
 	{
 		if (i == 0)
 		{
 			printf("%lu, %lu, ", fib1, fib2);
-			i += 2;
+			i += 1;
 		}
-		else if (i < 98)
+		else if (i < 97)
 			printf("%lu, ", fib2);
 		else
 			printf("%lu", fib2);
