@@ -1,32 +1,32 @@
 #include "main.h"
 
 /**
- * rot13 - Encodes rot13 text
- * s: input string pointer
+ * rot13 - Encodes or decodes rot13 text
+ * @s: input string for encoding or decoding
  *
  * Return: a pointer to encoded string
  */
 
 char *rot13(char *s)
 {
-	int index = 0;
+	int indx = 0;
 
-	while (s[index] != '\0')
+	while (s[indx] != '\0')
 	{
-		if (!((s[index] >= 'a' && s[index] <= 'z') || (s[index] >= 'A' && s[index] <= 'Z')))
+		if (!((s[indx] >= 'a' && s[indx] <= 'z') || (s[indx] >= 'A' && s[indx] <= 'Z')))
 		{
-			index++;
+			indx++;
 			continue;
 		}
 		else
 		{
-			if ((s[index] > 'm' && s[index] <= 'z') || (s[index] > 'M' && s[index] <= 'Z'))
-				s[index] -= 13;
+			if ((s[indx] > 'm' && s[indx] <= 'z') || (s[indx] > 'M' && s[indx] <= 'Z'))
+				s[indx] -= 13;
 			else
-				s[index] += 13;
+				s[indx] += 13;
 		}
-		index++;
+		indx++;
 	}
-	s[index] = '\n';
+/*	s[index] = '\n';*/
 	return (s);
 }
