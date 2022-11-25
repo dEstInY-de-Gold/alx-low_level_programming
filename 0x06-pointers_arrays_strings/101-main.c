@@ -18,6 +18,7 @@ int main(void)
 	_putchar('\n');
 	print_number(-98);
 	_putchar('\n');
-
+	print_number('b');
+	_putchar('\n');
 	return (0);
 }
