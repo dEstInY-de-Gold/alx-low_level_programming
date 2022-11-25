@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdio.h>
+
 /* int main(int ac, char **av); */
 int _putchar(char c);
 int main(void);
