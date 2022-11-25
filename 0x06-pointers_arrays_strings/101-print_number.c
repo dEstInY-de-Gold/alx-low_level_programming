@@ -70,18 +70,21 @@ void print_number(int n)
 			n %= power(10, len);
 		}
 	}
-	while (n >= 10)
+	else
 	{
-		len--;
-		_putchar(n / (power(10, len)) + '0');
-		if ((n / (power(10, len))) / power(10, len - 1) == 0 && len > 1)
+		while (n >= 10)
 		{
-			_putchar('0');
-			n %= power(10, len - 1);
 			len--;
-			continue;
+			_putchar(n / (power(10, len)) + '0');
+			if ((n / (power(10, len))) / power(10, len - 1) == 0 && len > 1)
+			{
+				_putchar('0');
+				n %= power(10, len - 1);
+				len--;
+				continue;
+			}
+			n %= power(10, len);
 		}
-		n %= power(10, len);
+		_putchar(n + '0');
 	}
-	_putchar(n + '0');
 }

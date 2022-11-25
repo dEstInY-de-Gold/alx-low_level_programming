@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/* int main(int ac, char **av); */
 int _putchar(char c);
 int main(void);
 char *_strcat(char *dest, char *src);
