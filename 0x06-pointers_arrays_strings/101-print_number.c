@@ -55,7 +55,6 @@ void print_number(int n)
 	{
 		n = abs(n);
 		_putchar('-');
-/*		len -= 1; */
 		while (n >= 10)
 		{
 			len--;
@@ -69,6 +68,7 @@ void print_number(int n)
 		}
 			n %= power(10, len);
 		}
+		_putchar(n + '0');
 	}
 	else
 	{
