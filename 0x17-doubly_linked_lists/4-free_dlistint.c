@@ -5,15 +5,17 @@
  * @head: pointer to head of the d-linked list
  */
 
-void free_listint(dlistint_t *head)
+void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *ptr;
-
-	ptr = head;
-	while (ptr != NULL)
+	if (head == NULL)
+		exit (EXIT_SUCCESS);
+	else
 	{
-		ptr = ptr->next;
-		free(ptr->prev);
+		while (head->next != NULL)
+		{
+			head = head->next;
+			free(head->prev);
+		}
+		free(head);
 	}
-	free(ptr);
 }
