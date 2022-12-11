@@ -7,15 +7,17 @@
 
 void free_dlistint(dlistint_t *head)
 {
-	if (head == NULL)
-		exit(EXIT_SUCCESS);
+	dlistint_t *ptr = head, *next;
+
+	if (ptr == NULL)
+		free(ptr);
 	else
 	{
-		while (head != NULL)
+		while (ptr != NULL)
 		{
-			free(head);
-			head = head->next;
+			next = ptr->next;
+			free(ptr);
+			ptr = next;
 		}
-		free(head);
 	}
 }
