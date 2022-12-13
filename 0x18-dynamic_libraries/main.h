@@ -2,7 +2,6 @@
 #define MAIN_H
 
 #include <stdio.h>
-#include <stdlib.h>
 #include "unistd.h"
 
 int main(void);
@@ -26,10 +25,10 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
-int _add(int x, int y);
-int _mul(int x, int y);
-int _div(int x, int y);
-int _mod(int x, int y);
-int _sub(int x, int y);
+int add(int x, int y);
+int mul(int x, int y);
+int div(int x, int y);
+int mod(int x, int y);
+int sub(int x, int y);
 
 #endif

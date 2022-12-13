@@ -8,7 +8,7 @@
  * Return: remainder
  */
 
-int _mod(int x, int y)
+int mod(int x, int y)
 {
 	return (x % y);
 }

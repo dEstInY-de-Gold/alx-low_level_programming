@@ -8,7 +8,7 @@
  * Return: product
  */
 
-int _mul(int x, int y)
+int mul(int x, int y)
 {
 	return (x * y);
 }
