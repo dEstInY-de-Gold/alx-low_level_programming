@@ -1,0 +1,12 @@
+school: school.o main.o
+
+main.o: main.c m.h
+	gcc -c main.c
+
+school.o: school.c m.h
+	gcc -c school.c
+
+all: school
+
+clean:
+	rm -f school *.0
