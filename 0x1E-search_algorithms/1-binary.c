@@ -11,37 +11,26 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	int div, divarr, *ptr, i;
+	int rptr, lptr, m, i;
 
-	div = (int)size;
-	divarr = ((int)size/2);
-	if (!(array))
-		return (-1);
-	if (value == array[divarr])
-		return (divarr);
-	if (div < 1)
-		return (-1);
-	printf("Searching in array: ");
-	for (i = 0; i < div; i++)
+	lptr = 0;
+	rptr = (int)size - 1;
+	while (lptr <= rptr)
 	{
-		printf("%d, ", array[i]);
-	}
-	printf("%d\n", array[i]);
-	if (value > array[divarr])
-	{
-		div = (int)size/2;
-		divarr += divarr/2;
-		ptr = &array[divarr];
-		printf("div: %d. divarr: %d\n", div, divarr);
-		binary_search(ptr, (size_t)div, value);
-	}
-	else if (value < array[divarr])
-	{
-		div = (int)size/2;
-		divarr -= divarr/2;
-		ptr = &array[0];
-		printf("div: %d. divarr: %d\n", div, divarr);	
-		binary_search(ptr, (size_t)div, value);
+		printf("Searching in array: ");
+
+		for (i = lptr; i < rptr; i++)
+			printf("%d, ", array[i]);
+
+		printf("%d\n", array[i]);
+
+		m = (rptr + lptr) / 2;
+		if (array[m] < value)
+			lptr = m + 1;
+		else if (array[m] > value)
+			rptr = m - 1;
+		else
+			return (m);
 	}
 
 	return (-1);
